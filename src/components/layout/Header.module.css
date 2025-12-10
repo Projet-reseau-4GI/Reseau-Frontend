@@ -1,0 +1,87 @@
+.header {
+    width: 100%;
+    padding: 15px 40px; 
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.logo_text {
+    font-size: 1.8rem; 
+    font-weight: 700;
+    color: #007bff; /* Bleu primaire */
+    text-decoration: none;
+}
+
+.nav_links {
+    display: flex;
+    gap: 45px; /* ESPACE AUGMENTÉ ENTRE LES LIENS (demande réitérée) */
+}
+
+.nav_link {
+    font-size: 1.25rem; /* TAILLE DE POLICE AUGMENTÉE (Professionnel) */
+    color: #333333;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+    font-weight: 500; 
+}
+
+.nav_link:hover {
+    color: #0056b3;
+    font-weight: 700; 
+}
+
+.user_actions {
+    display: flex;
+    gap: 15px; 
+}
+
+.login_button {
+    font-size: 1.1rem; 
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.login_button:hover {
+    background-color: #e9ecef;
+}
+
+.primary_button {
+    font-size: 1.1rem; 
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.primary_button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+    .nav_links {
+        gap: 20px;
+    }
+    .nav_link {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,46 @@
+/* Fichier de style pour le composant Header */
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    border-bottom: 1px solid var(--color-secondary-light);
+    height: 60px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-primary-blue);
+}
+
+.nav_menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav_menu a {
+    color: var(--color-text-link);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav_menu a:hover {
+    color: var(--color-primary-blue);
+}
+
+.button_group {
+    display: flex;
+    gap: 15px;
+}
+
+.connection_button {
+    background: none;
+    border: none;
+    color: var(--color-text-dark);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}

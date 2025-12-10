@@ -1,0 +1,73 @@
+/* Fichier de style pour le composant HeroSection */
+
+.hero_container {
+    padding: 80px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.left_column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.verification_badge {
+    color: var(--color-primary-blue);
+    font-size: 14px;
+    border: 1px solid var(--color-primary-blue);
+    padding: 4px 12px;
+    border-radius: 20px;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.main_title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.highlight_text {
+    color: var(--color-primary-blue); /* Mots en bleu */
+}
+
+.description {
+    font-size: 18px;
+    color: var(--color-text-link);
+    margin-bottom: 20px;
+}
+
+.cta_group {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.demo_link {
+    background: none;
+    border: none;
+    color: var(--color-text-dark);
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+    text-decoration: none; 
+}
+
+/* Style de la carte à droite (Mockup) */
+.right_column {
+    background-color: var(--color-secondary-light);
+    padding: 30px;
+    border-radius: 12px;
+    min-height: 400px; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

@@ -1,0 +1,140 @@
+/* -------------------------------------------------------------------------- */
+/* Conteneur principal */
+/* -------------------------------------------------------------------------- */
+.hero_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Colonne Gauche (Texte et CTA) */
+/* -------------------------------------------------------------------------- */
+.left_column {
+    flex: 1;
+    min-width: 350px;
+}
+
+.verification_badge {
+    display: inline-block;
+    background-color: #e0f7fa; /* Bleu clair */
+    color: #007bff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.main_title {
+    font-size: 3rem; /* Gros titre impactant */
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+    color: #333;
+}
+
+.highlight_text {
+    color: #007bff; /* Mettre l'accent sur la partie clé */
+    display: inline-block; /* Pour l'effet de ligne unique sur petit écran */
+}
+
+.description {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Groupe de boutons (CTA) */
+/* -------------------------------------------------------------------------- */
+.cta_group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.primary_button_large {
+    font-size: 1.15rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.primary_button_large:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.demo_link {
+    font-size: 1.1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.demo_link:hover {
+    color: #0056b3;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Colonne Droite (Image) */
+/* -------------------------------------------------------------------------- */
+.right_column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.professional_image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Responsive Design */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+    .hero_section {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .right_column {
+        order: -1; /* Placer l'image au-dessus du texte sur mobile */
+    }
+
+    .main_title {
+        font-size: 2.2rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+
+    .cta_group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .primary_button_large {
+        width: 100%;
+    }
+}

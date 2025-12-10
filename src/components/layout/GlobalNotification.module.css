@@ -1,0 +1,33 @@
+.notification_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #dc3545; /* Rouge d'erreur */
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+    margin: 0;
+    font-weight: bold;
+}
+
+.close_button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 10px;
+}
+
+.close_button:hover {
+    color: #f8d7da;
+}
